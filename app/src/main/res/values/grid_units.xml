@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021 EDEKA AG
+  ~
+  ~  ███████╗    ███████╗██████╗ ██████╗ ██╗       `        `
+  ~  ██╔════╝    ██╔════╝██╔══██╗██╔══██╗██║    ```````  ```````
+  ~  █████╗      █████╗  ██║  ██║██║  ██║██║    ``````◆◆◆◆``````
+  ~  ██╔══╝      ██╔══╝  ██║  ██║██║  ██║██║      ``◆◆◆◆◆◆◆◆``
+  ~  ███████╗    ███████╗██████╔╝██████╔╝██║        `◆◆◆◆◆◆`
+  ~  ╚══════╝    ╚══════╝╚═════╝ ╚═════╝ ╚═╝          `◆◆`
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  ~
+  ~ SPDX-License-Identifier: Apache-2.0
+  ~ License-Filename: LICENSE
+  -->
+<resources>
+    <dimen name="zero_grid_unit">0dp</dimen>
+    <dimen name="one_eighth_grid_unit">1dp</dimen>
+    <dimen name="quarter_grid_unit">2dp</dimen>
+    <dimen name="half_grid_unit">4dp</dimen>
+    <dimen name="three_quarter_grid_unit">6dp</dimen>
+    <dimen name="minus_half_grid_unit">-4dp</dimen>
+    <dimen name="minus_quarter_grid_unit">-2dp</dimen>
+    <dimen name="minus_half_grid_unit_plus_1">-3dp</dimen>
+    <dimen name="minus_half_grid_unit_minus_1">-5dp</dimen>
+    <dimen name="one_grid_unit">8dp</dimen>
+    <dimen name="minus_one_grid_unit">-8dp</dimen>
+    <dimen name="half_grid_unit_negative">-4dp</dimen>
+    <dimen name="half_grid_unit_minus_1">3dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
+    <dimen name="minus_one_and_a_half_grid_unit">-12dp</dimen>
+    <dimen name="one_and_a_quarter_grid_unit">10dp</dimen>
+    <dimen name="two_grid_unit_minus_two">14dp</dimen>
+    <dimen name="two_grid_unit">16dp</dimen>
+    <dimen name="two_grid_unit_plus_two">18dp</dimen>
+    <dimen name="two_and_a_half_grid_unit">20dp</dimen>
+    <dimen name="minus_two_and_a_half_grid_unit">-20dp</dimen>
+    <dimen name="three_grid_unit_minus_two">22dp</dimen>
+    <dimen name="three_grid_unit">24dp</dimen>
+    <dimen name="three_and_a_half_grid_unit">28dp</dimen>
+    <dimen name="three_and_a_quarter_grid_unit">26dp</dimen>
+    <dimen name="four_grid_unit">32dp</dimen>
+    <dimen name="four_half_grid_unit">36dp</dimen>
+    <dimen name="five_grid_unit">40dp</dimen>
+    <dimen name="five_half_grid_unit">44dp</dimen>
+    <dimen name="six_grid_unit">48dp</dimen>
+    <dimen name="six_and_a_quarter_grid_unit">50dp</dimen>
+    <dimen name="six_and_a_half_grid_unit">52dp</dimen>
+    <dimen name="seven_grid_unit">56dp</dimen>
+    <dimen name="seven_and_a_half_grid_unit">60dp</dimen>
+    <dimen name="eight_grid_unit">64dp</dimen>
+    <dimen name="eight_grid_unit_plus_1">65dp</dimen>
+    <dimen name="ten_grid_unit">80dp</dimen>
+    <dimen name="ten_and_a_half_grid_unit">84dp</dimen>
+    <dimen name="eleven_grid_unit">88dp</dimen>
+    <dimen name="twelve_grid_unit">96dp</dimen>
+    <dimen name="thirteen_grid_unit_plus_6">110dp</dimen>
+    <dimen name="eighteen_and_a_half_grid_unit">148dp</dimen>
+    <dimen name="nineteen_grid_unit">152dp</dimen>
+    <dimen name="twenty_grid_unit">160dp</dimen>
+    <dimen name="twentytwo_and_half_grid_unit">200dp</dimen>
+    <dimen name="fifteen_grid_unit">120dp</dimen>
+    <dimen name="fifteen_and_half_grid_unit">124dp</dimen>
+    <dimen name="sixteen_grid_unit">128dp</dimen>
+    <dimen name="seventeen_grid_unit">136dp</dimen>
+    <dimen name="twenty_three_grid_unit">184dp</dimen>
+    <dimen name="twenty_five_grid_unit">200dp</dimen>
+    <dimen name="thirty_grid_unit">240dp</dimen>
+    <dimen name="thirtytwo_grid_unit">256dp</dimen>
+    <dimen name="thirtyfive_grid_unit">280dp</dimen>
+    <dimen name="thirty_eight_grid_unit">304dp</dimen>
+    <dimen name="thirty_and_nine_grid_unit">312dp</dimen>
+    <dimen name="fourty_grid_unit">320dp</dimen>
+    <dimen name="nine_grid_unit">72dp</dimen>
+    <dimen name="nine_and_half_grid_unit">76dp</dimen>
+    <dimen name="quarter_grid_unit_negative">-2dp</dimen>
+    <dimen name="three_grid_unit_plus_2">26dp</dimen>
+</resources>
