@@ -83,7 +83,8 @@ class MainActivity : AppCompatActivity() {
         bottomBehavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
             val mapView = binding.map
             override fun onSlide(bottomSheet: View, slideOffset: Float) {
-
+                mapView.bottom = binding.menuBottomSheet.top
+                mapView.invalidate()
             }
 
             override fun onStateChanged(bottomSheet: View, newState: Int) {
