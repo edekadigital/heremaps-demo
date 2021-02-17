@@ -21,3 +21,7 @@ Insert your here sdk id and key into apps manifest file
             android:name="com.here.sdk.access_key_secret"
             android:value="YOUR KEY" />
 ```
+
+## Status
+
+Solved! We've got a [accepted answer](https://stackoverflow.com/a/66205991/4741304) 

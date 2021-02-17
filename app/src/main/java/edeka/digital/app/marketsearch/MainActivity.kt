@@ -32,6 +32,7 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.here.sdk.core.Point2D
 import com.here.sdk.gestures.GestureType
 import com.here.sdk.gestures.TapListener
 import com.here.sdk.mapview.MapScheme
@@ -81,24 +82,20 @@ class MainActivity : AppCompatActivity() {
         // Opening/closing the bottom sheet and all the animations included
         val bottomBehavior = BottomSheetBehavior.from(binding.menuBottomSheet)
         bottomBehavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
-            val mapView = binding.map
             override fun onSlide(bottomSheet: View, slideOffset: Float) {
-                mapView.bottom = binding.menuBottomSheet.top
-                mapView.invalidate()
+                updateMapView(bottomSheet.top)
             }
 
             override fun onStateChanged(bottomSheet: View, newState: Int) {
 
-
+                updateMapView(bottomSheet.top)
                 when (newState) {
                     BottomSheetBehavior.STATE_COLLAPSED -> {
-                        mapView.bottom = binding.menuBottomSheet.top
-                        mapView.invalidate()
+                        updateMapView(bottomSheet.top)
 
                     }
                     BottomSheetBehavior.STATE_HIDDEN -> {
-                        mapView.bottom = binding.menuBottomSheet.top
-                        mapView.invalidate()
+                        updateMapView(bottomSheet.top)
                     }
                     else -> { /* void */
                     }
@@ -134,10 +131,13 @@ class MainActivity : AppCompatActivity() {
         binding.map.onDestroy()
     }
 
-//    private fun setMapPaddingBotttom(offset: Float) {
-//        //From 0.0 (min) - 1.0 (max)
-//        val maxMapPaddingBottom: Float = bsExpanded - bsCollapsed
-//        //left,top,right,bottom
-//        binding.fragmentContainer.setPadding(0, 0, 0, Math.round(offset * maxMapPaddingBottom))
-//    }
+    private fun updateMapView(bottomSheetTop: Int) {
+        val mapView = binding.map
+
+        val principalY = Math.min(bottomSheetTop / 2.0, mapView.height / 2.0)
+        mapView.camera.principalPoint = Point2D(mapView.width / 2.0, principalY)
+
+        val logoMargin = Math.max(0, mapView.bottom - bottomSheetTop)
+        mapView.setWatermarkPosition(WatermarkPlacement.BOTTOM_CENTER, logoMargin.toLong())
+    }
 }
